@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    tools:context=".DanhSachActivity">
+
+    <ImageView
+        android:id="@+id/imageViewAnh"
+        android:layout_width="119dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/aino"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/textViewTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imageViewAnh"
+        android:text="Ai no"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="19dp" />
+    <TextView
+        android:id="@+id/textViewTG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTen"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageViewAnh"
+        android:text="Ai no"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="72dp" />
+</RelativeLayout>

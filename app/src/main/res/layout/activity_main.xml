@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D646CFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ImageViewNext"
+        android:layout_width="79dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/next" />
+
+    <ImageView
+        android:id="@+id/imageViewPrevious"
+        android:layout_width="79dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/previous" />
+
+    <ImageView
+        android:id="@+id/ImageViewPlayOrPause"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ImageViewNext"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPrevious"
+        app:srcCompat="@drawable/play" />
+
+    <SeekBar
+        android:id="@+id/seekBarTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/ImageViewPlayOrPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTime" />
+
+    <TextView
+        android:id="@+id/textViewEndTime"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTime" />
+
+    <ImageView
+        android:background="@drawable/custom_menu"
+        android:id="@+id/imageViewMenu"
+        android:padding="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/imageViewSearch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
+
+
+    <TextView
+        android:id="@+id/textViewTenBaiHat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Lơ Lửng"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTacGia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTacGia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:gravity="center"
+        android:text="Masew ft. B Ray &amp; RedT &amp;  Ý Tiên"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewHinhBaiHat"
+        android:layout_width="248dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTenBaiHat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/lunglo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTronBai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="48dp"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLapBai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="48dp"
+        android:button="@drawable/custom_lapbai"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
